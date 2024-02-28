@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss"
 import { fontFamily } from "tailwindcss/defaultTheme"
 
 const config = {
-  darkMode: ["class"],
+  darkMode: "selector",
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -12,7 +12,7 @@ const config = {
   prefix: "",
   theme: {
     screens: {
-      'sm': { 'max': '500px'},    // => @media (max-width)
+      'sm': { 'max': '500px' },   // => @media (max-width)
       'md': { 'max': '850px' },   // => @media (max-width)
       'lg': { 'max': '1080px' },  // => @media (max-width)
       'xl': { 'max': '1300px' },  // => @media (max-width)
