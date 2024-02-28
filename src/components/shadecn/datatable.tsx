@@ -174,7 +174,7 @@ export function DataTableComponent({ props }: { props?: { cpw?:string, cph?:stri
 
   return (
     <div className={`w-[${componentWidth}] h-[${componentHeight}]`}>
-      <div className="flex items-center py-4">
+      <div className="flex items-center py-4 gap-4">
         <Input
           placeholder="Filter emails..."
           value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}

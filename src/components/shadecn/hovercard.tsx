@@ -8,11 +8,14 @@ import { Sticker } from "../custom/sticker"
 export function HoverCardComponent() {
   return (
     <HoverCard>
-      <HoverCardTrigger className="m-0" asChild>
-        <Button variant="link" className="m-0 text-left hover:no-underline" style={{padding:"0", height:"fit-content"}}>
+      {/* TRIGGERER ==================================== */}
+      <HoverCardTrigger className="m-0 md:w-[50%]" asChild>
+        <Button variant="link" className="m-0 text-left hover:no-underline md:w-[100%]" style={{padding:"0", height:"fit-content"}}>
             <Sticker title="Link clicks" desc="Total times users went by shortened URL" highlight={`${2384}`}/>
         </Button>
       </HoverCardTrigger>
+
+      {/* CONTENT ==================================== */}
       <HoverCardContent className="w-80">
         <div className="flex justify-between space-x-4">
           <Avatar>
