@@ -11,6 +11,13 @@ const config = {
 	],
   prefix: "",
   theme: {
+    screens: {
+      'sm': { 'max': '500px'},    // => @media (max-width)
+      'md': { 'max': '850px' },   // => @media (max-width)
+      'lg': { 'max': '1080px' },  // => @media (max-width)
+      'xl': { 'max': '1300px' },  // => @media (max-width)
+      '2xl': { 'max': '1536px' }, // => @media (max-width)
+    },
     container: {
       center: true,
       padding: "2rem",
