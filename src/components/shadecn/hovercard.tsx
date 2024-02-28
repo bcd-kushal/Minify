@@ -9,9 +9,9 @@ export function HoverCardComponent() {
   return (
     <HoverCard>
       {/* TRIGGERER ==================================== */}
-      <HoverCardTrigger className="m-0 md:w-[50%]" asChild>
+      <HoverCardTrigger className="m-0 md:w-[100%] lg:w-[47%]" asChild>
         <Button variant="link" className="m-0 text-left hover:no-underline md:w-[100%]" style={{padding:"0", height:"fit-content"}}>
-            <Sticker title="Link clicks" desc="Total times users went by shortened URL" highlight={`${2384}`}/>
+            <Sticker title="Link clicks" desc="Total URL clicks" highlight={`${2384}`}/>
         </Button>
       </HoverCardTrigger>
 
