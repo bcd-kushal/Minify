@@ -35,8 +35,7 @@ export default function Home() {
     <main className="px-[24px] flex items-stretch justify-stretch gap-5 md:flex-col" style={{minHeight:`calc(100dvh - ${BODY_EXCLUDED_HEIGHT}px)`}}>
       <div className="min-w-[300px]"><NewURLForm props={{cph:"fit"}}/></div>
       <div className="w-[100%] flex flex-col items-stretch justify-start gap-4 md:flex-col-reverse">
-        <div className="flex items-center justify-start gap-4 overflow-x-scroll scrollbar-hide pb-3 md:flex-wrap">
-          <HoverCardComponent/>
+        <div className="flex w-[100%] items-center justify-start gap-4 scrollbar-hide pb-3 overflow-x-scroll md:flex-wrap md:justify-evenly">
           <HoverCardComponent/>
           <HoverCardComponent/>
         </div>
