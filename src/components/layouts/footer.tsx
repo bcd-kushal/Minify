@@ -1,9 +1,5 @@
 import Link from "next/link"
-import { DropdownComponent } from "../shadecn/dropdown"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faC, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { Button } from "../ui/button"
-
 
 export default function FooterLayout({ props }: { props?:{ cph?:string, cpw?:string } }){
 

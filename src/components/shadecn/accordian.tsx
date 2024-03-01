@@ -12,7 +12,7 @@ export function AccordionComponent({ data, ...x }: AccordianProps) {
         return <></>
 
     return (
-        <Accordion type="single" collapsible className="w-full md:hidden">
+        <Accordion type="single" collapsible className="w-full">
             {data.map((qna,index) => (
                 <AccordionItem value={`item-${index+1}`} key={qna.question}>
                     <AccordionTrigger>{qna.question}</AccordionTrigger>

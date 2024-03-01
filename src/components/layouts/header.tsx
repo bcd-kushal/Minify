@@ -1,5 +1,4 @@
 import { ProfileIcon } from "../custom/profileIcon"
-import { AvatarComponent } from "../shadecn/avatar"
 import { ComboboxComponent } from "../shadecn/combobox"
 import { InputComponent } from "../shadecn/input"
 import { MinifyIcon } from "../../svgs/minifyIcon"
