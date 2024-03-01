@@ -1,11 +1,14 @@
 import type { Metadata } from "next"
 import { Outfit as FontSans } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
+import { LAYOUT_DIMENSIONS } from "../../utils/layout_dimensons"
 import "./globals.css"
 
 import { cn } from "@/lib/utils"
+import FooterLayout from "@/components/layouts/footer"
 
 const fontsans = FontSans({ subsets: ["latin"], variable:"--font-sans" })
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +18,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={cn("min-h-[100dvh] bg-background font-sans antialiased flex flex-col items-stretch justify-between", fontsans.variable)}>
-        { children }
+      <body className={cn("bg-background font-sans antialiased flex flex-col items-stretch justify-between", fontsans.variable)}>
+        {children}
+        <FooterLayout props={{ cph:`${LAYOUT_DIMENSIONS.FOOTER.H}px` }}/> 
         <Toaster/>
       </body>
     </html>
