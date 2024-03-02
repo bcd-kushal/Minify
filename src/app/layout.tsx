@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={cn("bg-background font-sans antialiased flex flex-col items-stretch justify-between", fontsans.variable)}>
+      <body className={cn("min-h-screen bg-background font-sans antialiased flex flex-col items-stretch justify-between", fontsans.variable)}>
         {children}
-        <FooterLayout props={{ cph:`${LAYOUT_DIMENSIONS.FOOTER.H}px` }}/> 
+        <FooterLayout/> 
         <Toaster/>
       </body>
     </html>
