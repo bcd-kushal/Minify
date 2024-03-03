@@ -1,5 +1,5 @@
 import { RegistrationForm } from "@/components/forms/forms"
-import { MinifyIcon } from "@/svgs/minifyIcon"
+import { MinifyIcon } from "@/svgs/svgs"
 import Link from "next/link"
 
 export default function RegisterPage(){

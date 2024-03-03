@@ -7,7 +7,7 @@ import FeaturesSection from "@/components/landing/featuresSection"
 import FAQSection from "@/components/landing/faqSection"
 
 import Link from "next/link"
-import { MinifyIcon } from "@/svgs/minifyIcon"
+import { MinifyIcon } from "@/svgs/svgs"
 
 const BODY_EXCLUDED_HEIGHT = LAYOUT_DIMENSIONS.HEADER.H + LAYOUT_DIMENSIONS.RIBBON.H + LAYOUT_DIMENSIONS.FOOTER.H
 
@@ -19,7 +19,7 @@ export default function Home() {
   ]
   
   return (
-    <main/*  style={{minHeight:`calc(100dvh - ${BODY_EXCLUDED_HEIGHT}px)`}} */>
+    <main>
       <Link href="/" className="absolute top-6 left-6"><MinifyIcon/></Link>
       <div className="h-screen w-[100%] flex gap-2 items-stretch justify-stretch md:flex-col">
         <LeftHeroSection/>

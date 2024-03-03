@@ -1,7 +1,7 @@
 "use client"
 import { SigninForm } from "@/components/forms/forms"
 import Link from "next/link"
-import { MinifyIcon } from "@/svgs/minifyIcon"
+import { MinifyIcon } from "@/svgs/svgs"
 
 export default function Homepage(){
     return(
