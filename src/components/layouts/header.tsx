@@ -1,7 +1,7 @@
 import { ProfileIcon } from "../custom/profileIcon"
 import { ComboboxComponent } from "../shadecn/combobox"
 import { InputComponent } from "../shadecn/input"
-import { MinifyIcon } from "../../svgs/minifyIcon"
+import { MinifyIcon } from "../../svgs/svgs"
 
 
 export default function HeaderLayout({ props }: { props?: { cpw?:string, cph?:string } }){
